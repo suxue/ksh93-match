@@ -21,9 +21,16 @@ call.
     }
 
 
-## Tips
+## Usage
+
+    match [ options ] regexp subject [capture]
+
+Here `[capture]` is the name of variable you want the captured results
+to be put in.
 
 For basic usage and examples, see the directory `tests/` and `test.sh`.
+
+To get the explanation of all options, invoke `match` without arguments.
 
 As ksh93 has dynamic scope, which is weird to most programmers. `match`
 follows a simple rule to find which variable the captured groups will be
